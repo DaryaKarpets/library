@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope";
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #F26F34;
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-size: 20px;
+}
+
+.header .container nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .container nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    transition: .3s;
+}
+
+.header .container nav a:last-child {
+    color: #d3d3d3;
+}
+
+.header .container nav a:hover {
+    background: #fff;
+    color: #212121;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.main .card-list  {
+    display: flex;
+    gap: 20px;
+}
+
+.main .card-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(228, 244, 255);
+    text-align: center;
+    height: 200px;
+    width: calc(100% / 3 - 20px);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #212121;
+    transition: .3s;
+}
+
+.main .card-item:hover {
+    background: rgb(126, 198, 246);
+}
+
+.added-book {
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+.invalid-text {
+    color: red;
+}
+
+.added-book form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.added-book form input,
+.added-book form textarea,
+.added-book form select {
+    padding: 16px;
+    border: 1px solid silver;
+    resize: none;
+}
+
+.added-book form input[type="file"] {
+    border: 1px dashed silver;
+}
+
+.added-book form small {
+    margin-top: -15px;
+}
+
+.edit-book .item-list,
+.book-delete .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.edit-book .item-list .item,
+.book-delete .item-list .item {
+    padding: 20px;
+    width: calc(100% / 3 - 30px);
+    box-shadow: 0 8px 16px rgba(0 0 0 / 10%);
+}
+
+.edit-book img,
+.book-delete img {
+    width: 165px;
+    height: 265px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.btn-edit {
+    padding: 8px;
+    background: rgb(242, 160, 52);
+    color: #fff;
+    display: block;
+    margin: 8px 0 0 0;
+}
+
+.btn-delete {
+    padding: 8px;
+    background: rgb(242, 52, 52);
+    color: #fff;
+    display: block;
+    margin: 8px 0 0 0;
+}
+
+.book-edit-dialog {
+    width: 600px;
+}
+
+.book-edit-dialog label {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-edit-dialog input,
+.book-edit-dialog textarea {
+    padding: 16px;
+}
